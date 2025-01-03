@@ -45,6 +45,8 @@ export default {
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
 			strip:'rgba(var(--strip))',
+			secondaryfont:'rgba(var(--secondaryfont))',
+			newbutton:'rgba(var(--newbutton))',
   			chart: {
   				'1': 'hsl(var(--chart-1))',
   				'2': 'hsl(var(--chart-2))',
@@ -63,6 +65,24 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		}
+,
+ backgroundImage: {
+        'gradient': 'linear-gradient(180deg, #3369d6 0%, #04c .01%, #0036a3 100%)',
+      },
+boxShadow: {
+        'custshadow': '0 1px #14141214, 0 -1px #0003 inset',
+      },
+ fontSize: {
+        // Custom font sizes
+        'xxs': '0.625rem', // 10px
+        'xxxl': '2.5rem',  // 40px
+      },
+      spacing: {
+        // Custom padding/margin sizes
+        '72': '18rem', // 288px
+        '84': '21rem', // 336px
+        '96': '24rem', // 384px
+      },
   	}
   },
   plugins: [require("tailwindcss-animate")],
