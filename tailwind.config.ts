@@ -15,7 +15,8 @@ export default {
   				DEFAULT: 'rgba(var(--primary))',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
-  			background: 'hsl(var(--background))',
+  			background: 'rgba(var(--background))',
+  			secbackground: 'hsl(var(--secbackground))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
   				DEFAULT: 'hsl(var(--card))',
