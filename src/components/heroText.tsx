@@ -23,7 +23,7 @@ function HeroText() {
                 <p className='flex justify-center'>
                 Hookdecks platform for engineering teams.
                 </p>
-                </div>  <div className='flex text-sm justify-center mt-10  justify-around '>
+                </div>  <div className='flex text-sm justify-center mt-6  justify-around '>
                     <div className='w-[40%] flex justify-around'>
 
                     <div className='rounded-md px-3 py-[7px] text-white bg-gradient font-bold shadow-custshadow'>Start for free</div>

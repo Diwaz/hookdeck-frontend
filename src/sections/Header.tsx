@@ -5,12 +5,12 @@ import { NavigationMenuDemo } from '@/components/dropdown'
 
 function Header() {
   return (
-    <header className=' flex justify-center border-b-[1px]'>
+    <header className=' flex justify-center border-b-[1px] sticky top-0 bg-background '>
         <div className="mainContainer flex justify-between px-5 py-2 bg-blue text-black  items-center  w-[60%]">
             <div className='text-sm'>
                 <nav className='flex gap-6'>
                     <a href="http://" className='flex w-24 items-center font-bold '>
-                           <Logo/>Hookform       
+                           <Logo/>Hookdeck   
                     </a>
                     {/* <a href="http://">Platform</a> */}
                     <div ><NavigationMenuDemo/></div>
