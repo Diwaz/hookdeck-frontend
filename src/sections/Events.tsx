@@ -47,7 +47,7 @@ export default function StickySections() {
     <div>
         <div className=' flex justify-center h-full   font-lato'>
             <div className=' w-[60%]'>
-                <section ref={receiveRef} className='relative  ' >
+                <section ref={receiveRef} className='relative  gradLine' >
                         <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 {/* <div className='sticky bg-slate-400 top-4 z-30'>hello</div> */}
                 <div>
@@ -64,7 +64,7 @@ export default function StickySections() {
                     </div>
                 </div>
                 </section>
-                <section ref={processRef}>
+                <section ref={processRef} className='relative gradLine'>
                         <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 
                 <div className=''>
@@ -74,11 +74,11 @@ export default function StickySections() {
                         </div>
 <div className=' flex gap-1'>
 
-                    <div className='flex gap-1 justify-center    '> 
+                    <div className='flex gap-1 justify-center w-[100%]   '> 
                         {/* <LGcard title={'Never miss an event.'} desp={'Reply on an event giveaway with unparalled uptime and ingestion spreads.'}/> */}
                         <DiffCard title={'Filter and route messages.'} desp={'Use payload data to selectively filter events and control their final destination.'} img2={'img03.webp'} img={'img04.webp'} reverse={true}/>
                     </div>
-                    <div className="row2 flex flex-col gap-1 justify-between ">
+                    <div className="row2 flex flex-col gap-1 justify-between w-[100%]">
                         <MDcard title={'Transform data.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'img2.webp'} reverse={true}/>
                         <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'newimg.webp'} reverse={true}/>
                     </div>
@@ -86,7 +86,7 @@ export default function StickySections() {
                 </div>
 
                 </section>
-                        <section ref={transformRef}>
+                        <section ref={transformRef} className='relative gradLine'>
 
                 <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Deliver width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 <div className=''>
