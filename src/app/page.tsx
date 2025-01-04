@@ -1,3 +1,4 @@
+import Events from "@/sections/Events";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Trusted from "@/sections/Trusted";
@@ -8,6 +9,7 @@ export default function Home() {
 <Header/>
 <Hero/>
 <Trusted/>
+<Events/>
     </>
   
   );

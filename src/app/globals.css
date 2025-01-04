@@ -31,7 +31,7 @@ body {
   :root {
 
     --background:250,250,248;
-    
+
     --secbackground:0 0% 100%;
 
     --foreground:240 10% 3.9%;
@@ -87,6 +87,10 @@ body {
     --newbutton: 55,55,54;
 
     --secondaryfont: 122,122,122;
+
+    --lightbg: 229,236,250;
+
+    --lightstrip: 204,218,245;
 
 
   }

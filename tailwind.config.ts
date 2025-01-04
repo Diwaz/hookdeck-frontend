@@ -16,6 +16,7 @@ export default {
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			background: 'rgba(var(--background))',
+  			lightbg: 'rgba(var(--lightbg))',
   			secbackground: 'hsl(var(--secbackground))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -46,6 +47,7 @@ export default {
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
 			strip:'rgba(var(--strip))',
+			lightstrip:'rgba(var(--lightstrip))',
 			secondaryfont:'rgba(var(--secondaryfont))',
 			newbutton:'rgba(var(--newbutton))',
   			chart: {
@@ -72,6 +74,7 @@ export default {
       },
 boxShadow: {
         'custshadow': '0 1px #14141214, 0 -1px #0003 inset',
+        'custshadow2': '0 1px 0 0 #ccdaf5',
       },
  fontSize: {
         // Custom font sizes

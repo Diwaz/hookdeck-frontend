@@ -10,7 +10,7 @@ import Logo8 from '../../public/assets/chartm.svg'
 function Trusted() {
   return (
     <div className=' flex justify-center '>
-        <div className='  w-[60%] border-strip border-x-[1px]'>
+        <div className='  w-[60%] border-strip border-x-[1px] border-b-[1px]  py-10'>
             <div className='flex justify-center py-10'> <p className='text-sm text-secondaryfont'>
 
             Trusted by great teams around the world
