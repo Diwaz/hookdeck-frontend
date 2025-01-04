@@ -6,6 +6,7 @@ import Process from '../../public/assets/procc.svg'
 import Deliver from '../../public/assets/deliver.svg'
 import LGcard from '@/components/lgCard'
 import MDcard from '@/components/mdCard'
+import DiffCard from '@/components/diffCard'
 
 type Section = 'receive' | 'process' | 'transform'
 
@@ -31,7 +32,7 @@ export default function StickySections() {
     }
 
     const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.5,
+      threshold: 0.6,
     })
 
     if (receiveRef.current) observer.observe(receiveRef.current)
@@ -44,22 +45,66 @@ export default function StickySections() {
         //   <section ref={receiveRef} className="relative">
   return ( 
     <div>
-        <div className=' flex justify-center h-[800px] font-lato'>
+        <div className=' flex justify-center h-full   font-lato'>
             <div className=' w-[60%]'>
+                <section ref={receiveRef} className='relative  ' >
+                        <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                {/* <div className='sticky bg-slate-400 top-4 z-30'>hello</div> */}
                 <div>
-                    <div className="title flex justify-between items-center w-[35%] ">
-                        <div> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                    <div className="title flex  gap-3 items-center  mb-6   ">
                         <div className='font-bold text-xxxl'>Receive</div>
                         </div>
 
                     <div className='flex justify-center '>
                         <LGcard title={'Never miss an event.'} desp={'Reply on an event giveaway with unparalled uptime and ingestion spreads.'}/>
                     </div>
-                    <div className="row2 flex justify-center gap-2 mt-2">
+                    <div className="row2 flex justify-center gap-1 mt-1">
                         <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'newimg.webp'}/>
                         <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'img1.webp'} reverse={true}/>
                     </div>
-                                  </div>
+                </div>
+                </section>
+                <section ref={processRef}>
+                        <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                
+                <div className=''>
+                    <div className="title flex gap-3  items-center w-[25%] mb-6 ">
+                        {/* <div className=' ml-[-50px]'> <Process width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div> */}
+                        <div className='font-bold text-xxxl'>Process</div>
+                        </div>
+<div className=' flex gap-1'>
+
+                    <div className='flex gap-1 justify-center    '> 
+                        {/* <LGcard title={'Never miss an event.'} desp={'Reply on an event giveaway with unparalled uptime and ingestion spreads.'}/> */}
+                        <DiffCard title={'Filter and route messages.'} desp={'Use payload data to selectively filter events and control their final destination.'} img2={'img03.webp'} img={'img04.webp'} reverse={true}/>
+                    </div>
+                    <div className="row2 flex flex-col gap-1 justify-between ">
+                        <MDcard title={'Transform data.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'img2.webp'} reverse={true}/>
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'newimg.webp'} reverse={true}/>
+                    </div>
+</div>
+                </div>
+
+                </section>
+                        <section ref={transformRef}>
+
+                <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Deliver width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                <div className=''>
+                    <div className="title flex gap-3 items-center w-[25%] mb-6">
+                        {/* <div className=' ml-[-50px]'> <Deliver width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div> */}
+                        <div  className='font-bold text-xxxl'>Deliver</div>
+                        </div>
+
+                    <div className='flex justify-center gap-1'>
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'newimg.webp'}/>
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'newimg.webp'}/>
+                    </div>
+                    <div className="row2 flex justify-center gap-1 mt-1">
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'img1.webp'} reverse={true}/>
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'img1.webp'} reverse={true}/>
+                    </div>
+                </div>
+                </section>
             </div>
         </div>
     </div>
