@@ -1,10 +1,12 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { ArrowDownToLine, ArrowRightLeft, ArrowUpDown, ReceiptIcon } from 'lucide-react'
 import Receive from '../../public/assets/receive.svg'
 import Process from '../../public/assets/procc.svg'
 import Deliver from '../../public/assets/deliver.svg'
+import LGcard from '@/components/lgCard'
+import MDcard from '@/components/mdCard'
+
 type Section = 'receive' | 'process' | 'transform'
 
 export default function StickySections() {
@@ -49,14 +51,15 @@ export default function StickySections() {
                         <div> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                         <div className='font-bold text-xxxl'>Receive</div>
                         </div>
-                    <div className="row1  flex justify-center  ">
-                        <div className='w-[90%] border-[1px] border-strip rounded-[20px] bg-[rgba(245,245,245)] p-[1px]'>
 
-                        <div className=" bg-[url('/assets/img0.webp')] bg-contain bg-center h-64 rounded-[19px] border-[1px] ">tf</div>
-                        </div>
+                    <div className='flex justify-center '>
+                        <LGcard title={'Never miss an event.'} desp={'Reply on an event giveaway with unparalled uptime and ingestion spreads.'}/>
                     </div>
-                    <div className="row2"></div>
-                </div>
+                    <div className="row2 flex justify-center gap-2 mt-2">
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'newimg.webp'}/>
+                        <MDcard title={'Consolidate events across sources.'} desp={'Combine disparate sources to centralize and simplify your pipeline.'} img={'img1.webp'} reverse={true}/>
+                    </div>
+                                  </div>
             </div>
         </div>
     </div>
