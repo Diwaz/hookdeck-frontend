@@ -14,8 +14,18 @@ function UseCase() {
             <div className='font-bold text-[25px]'>One event gateway, many use cases</div>
             <div className='text-secondaryfont'>Hookdeck was built to be flexible and unopinionated to fit any scenario.</div>
         </div>
-        <div className='mt-10'><ComponentSlider/></div>
-    </div>
+        <div className='mt-10 '><ComponentSlider/></div>
+{/* 
+        <div className=' flex flex-col items-center  justify-center'>
+            <div className='font-bold text-[25px]'>One event gateway, many use cases</div>
+            <div className='text-secondaryfont'>Hookdeck was built to be flexible and unopinionated to fit any scenario.</div>
+        </div>
+        <div className=' flex flex-col items-center  justify-center'>
+            <div className='font-bold text-[25px]'>One event gateway, many use cases</div>
+            <div className='text-secondaryfont'>Hookdeck was built to be flexible and unopinionated to fit any scenario.</div>
+        </div>
+    */}
+    </div> 
 </section>     
   )
 }

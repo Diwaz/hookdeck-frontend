@@ -64,7 +64,7 @@ console.log('kebnnnn',len)
     setIsAutoPlaying(false)
     setCurrentIndex(index)
   }
-
+ 
   return (
     <div className="border-y-[1px] ">
 

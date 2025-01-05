@@ -10,6 +10,7 @@ import Deliver from '../../public/assets/deliver.svg'
 import Route from '../../public/assets/routing.svg'
 import API from '../../public/assets/procc.svg'
 import Msg from '../../public/assets/msg.svg'
+import MDcard from "./mdCard"
 
 interface Image {
   src: string
@@ -17,41 +18,42 @@ interface Image {
   label: string
   svg: React.ReactNode
 }
-
+type svgSize = number
+const svgSize  = 20
 const images: Image[] = [
   {
-    src: "/assets/img000.png",
-    svg: <Receive width={24} height={24} />,
+    src: "img000.png",
+    svg: <Receive width={svgSize} height={svgSize} />,
     alt: "Slide 1",
     label: "Inbound webhook infrastructure",
   },
   {
-    src: "/assets/img001.png?height=400&width=200",
+    src: "img001.png?height=400&width=200",
 
-    svg: <Deliver  width={24} height={24} />,
+    svg: <Deliver  width={svgSize} height={svgSize} />,
     alt: "Slide 2",
     label: "Outbound webhook infrastructure ",
   },
   {
-    src: "/assets/img002.png?height=400&width=800",
+    src: "img002.png?height=400&width=800",
 
-    svg: <Route  width={24} height={24}  />,
+    svg: <Route  width={svgSize} height={svgSize}  />,
     alt: "Slide 3",
-    label: "Third-party to third-party message routing",
+    label: "Third-party to third-party ",
   },
   {
-    src: "/assets/img003.png",
+    src: "img003.png",
 
-    svg: <API  width={24} height={24} />,
+    svg: <API  width={svgSize} height={svgSize} />,
     alt: "Slide 4",
     label: "Asynchronous API infrastructure",
   },
   {
-    src: "/assets/img004.png",
+    src: "img004.png",
     
-    svg: <Msg  width={24} height={24} />,
+    svg: <Msg  width={svgSize} height={svgSize} />,
     alt: "Slide 5",
-    label: "Message broker for serverless application",
+    label: "Message broker for serverles",
   },
 ]
 const len = images.length -1
@@ -76,49 +78,49 @@ console.log('kebnnnn',len)
   }
 
   return (
-    <div className="border-y-[1px]  ">
+    <div className="border-[1px] p-2 rounded-[20px] h-full   ">
 
-    <div className="relative w-[90%] flex flex-row-reverse  mx-auto border-strip border-y-0 border-[1px]">
-      <div className="relative overflow-hidden   rounded-lg aspect-[2/1] h-72 w-full  justify-center">
+    <div className="relative w-[100%]  flex gap-2 flex-row-reverse  justify-between mx-auto ">
+      <div className=" w-full">
         <AnimatePresence mode="wait">
-          <motion.img
-            key={currentIndex}
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            className="absolute w-full h-full object-contain bg-secbackground"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -100 }}
-            transition={{ duration: 0.2 }}
-            height={400}
-            width={400}
-            />
-        </AnimatePresence>
+                    <motion.div
+                      key={currentIndex}
+            initial={{ opacity: 0,  }}
+            animate={{ opacity: 1, }}
+            exit={{ opacity: 0,  }}
+            transition={{ duration: 0.3 }}
+
+                    
+                    >
+
+                <MDcard  title={'hello'} img={images[currentIndex].src} desp={'hello'} reverse={true} />
+            </motion.div>
+                 </AnimatePresence>
 
 
       </div>
 
-      <div className=" flex-col flex w-[30%]  ">
+      <div className=" flex-col flex w-[30%]   ">
         {images.map((image, index) => (
             <button
             key={index}
             onClick={() => handleDotClick(index)}
             className={cn(
-                "text-sm px-4 py-2 transition-colors border-0  w-full ",
+                "text-sm px-4 p-1 h-14 flex  flex-col justify-center items-center transition-colors border-0  w-full ",
                 currentIndex === index
-                ?  'text-primary bg-lightbg  p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'
+                ?  'text-primary bg-lightbg   rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'
                 : "text-muted-foreground hover:text-foreground ",
                 index == 0 ? 'border-l-0' :''
             )}
             aria-label={`Go to slide ${index + 1}`}
             aria-current={currentIndex === index}
             >
-                <div className="flex justify-between">
+                <div className="flex justify-start gap-2 w-full  ">
 
-                   <div>
+                   <div className="relative left-0">
                     {image.svg}
                    </div>
-                <div>
+                <div className="flex justify-start w-full ">
 
             {image.label}
                 </div>
