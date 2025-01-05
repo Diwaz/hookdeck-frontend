@@ -11,36 +11,36 @@ import DiffCard from '@/components/diffCard'
 type Section = 'receive' | 'process' | 'transform'
 
 export default function StickySections() {
-  const [activeSection, setActiveSection] = useState<Section>('receive')
+//   const [activeSection, setActiveSection] = useState<Section>('receive')
   const receiveRef = useRef<HTMLDivElement>(null)
   const processRef = useRef<HTMLDivElement>(null)
   const transformRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
-    const observerCallback: IntersectionObserverCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          if (entry.target === receiveRef.current) {
-            setActiveSection('receive')
-          } else if (entry.target === processRef.current) {
-            setActiveSection('process')
-          } else if (entry.target === transformRef.current) {
-            setActiveSection('transform')
-          }
-        }
-      })
-    }
+//   useEffect(() => {
+//     const observerCallback: IntersectionObserverCallback = (entries) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           if (entry.target === receiveRef.current) {
+//             setActiveSection('receive')
+//           } else if (entry.target === processRef.current) {
+//             setActiveSection('process')
+//           } else if (entry.target === transformRef.current) {
+//             setActiveSection('transform')
+//           }
+//         }
+//       })
+//     }
 
-    const observer = new IntersectionObserver(observerCallback, {
-      threshold: 0.6,
-    })
+//     const observer = new IntersectionObserver(observerCallback, {
+//       threshold: 0.6,
+//     })
 
-    if (receiveRef.current) observer.observe(receiveRef.current)
-    if (processRef.current) observer.observe(processRef.current)
-    if (transformRef.current) observer.observe(transformRef.current)
+//     if (receiveRef.current) observer.observe(receiveRef.current)
+//     if (processRef.current) observer.observe(processRef.current)
+//     if (transformRef.current) observer.observe(transformRef.current)
 
-    return () => observer.disconnect()
-  }, [])
+//     return () => observer.disconnect()
+//   }, [])
 
         //   <section ref={receiveRef} className="relative">
   return ( 
