@@ -93,7 +93,7 @@ console.log('kebnnnn',len)
                     
                     >
 
-                <MDcard  title={'hello'} img={images[currentIndex].src} desp={'hello'} reverse={true} />
+                <MDcard  title={images[currentIndex].label} img={images[currentIndex].src} desp={'Reliably consume events at scale. Hookdeck covers everything from analytics and telemetry data capture, to triggering long-running asynchronous processes.'} reverse={true} />
             </motion.div>
                  </AnimatePresence>
 
