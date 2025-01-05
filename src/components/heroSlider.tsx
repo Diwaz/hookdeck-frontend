@@ -3,8 +3,8 @@
 import * as React from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { div } from "framer-motion/client"
+// import { Button } from "@/components/ui/button"
+// import { div } from "framer-motion/client"
 
 interface Image {
   src: string

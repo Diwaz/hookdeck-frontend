@@ -1,14 +1,14 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
+import {  useRef } from 'react'
 import Receive from '../../public/assets/receive.svg'
-import Process from '../../public/assets/procc.svg'
+// import Process from '../../public/assets/procc.svg'
 import Deliver from '../../public/assets/deliver.svg'
 import LGcard from '@/components/lgCard'
 import MDcard from '@/components/mdCard'
 import DiffCard from '@/components/diffCard'
 
-type Section = 'receive' | 'process' | 'transform'
+// type Section = 'receive' | 'process' | 'transform'
 
 export default function StickySections() {
 //   const [activeSection, setActiveSection] = useState<Section>('receive')
