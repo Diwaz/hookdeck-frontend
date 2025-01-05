@@ -1,4 +1,5 @@
 import Events from "@/sections/Events";
+import Footer from "@/sections/Footer";
 import Header from "@/sections/Header";
 import Hero from "@/sections/Hero";
 import Trusted from "@/sections/Trusted";
@@ -12,6 +13,7 @@ export default function Home() {
 <Trusted/>
 <Events/>
 <UseCase/>
+<Footer/>
     </>
   
   );
