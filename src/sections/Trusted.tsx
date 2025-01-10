@@ -10,26 +10,26 @@ import Logo8 from '../../public/assets/chartm.svg'
 function Trusted() {
   return (
     <div className=' flex justify-center '>
-        <div className='  w-[60%] border-strip border-x-[1px] border-b-[1px]  py-10'>
+        <div className='  w-[100%] xl:w-[100%] border-strip border-x-[1px] border-b-[1px]  py-10'>
             <div className='flex justify-center py-10'> <p className='text-sm text-secondaryfont'>
 
             Trusted by great teams around the world
             </p>
             </div>
-            <div className='flex justify-center gap-20 '>
-                <div className=' flex flex-col h-20 justify-between '>
-                    <div><Logo1/></div>
+            <div className='flex flex-col  bg-red-400 justify-center gap-5 xl:gap-20 '>
+                <div className=' flex flex-col h-20 justify-between items-center bg-slate-400'>
+                    <div ><Logo1/></div>
                     <div><Logo5/></div>
                 </div>
-                <div  className=' flex flex-col h-20 justify-between '>
+                <div  className=' flex flex-col h-20 justify-between  '>
                     <div  className='flex justify-center'><Logo2/></div>
                     <div  className='flex justify-center'><Logo6/></div>
                 </div>
-                <div  className='flex flex-col h-20 justify-between '>
+                <div  className='flex flex-col h-20 justify-between items-center'>
                     <div><Logo3/></div>
                     <div className='flex justify-center'><Logo7/></div>
                 </div>
-                <div  className=' flex flex-col h-20 justify-between '>
+                <div  className=' flex flex-col h-20 justify-between items-center '>
                     <div><Logo4/></div>
                     <div className='flex justify-center'><Logo8/></div>
                 </div>

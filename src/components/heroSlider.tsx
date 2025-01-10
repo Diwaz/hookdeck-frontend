@@ -88,7 +88,7 @@ console.log('kebnnnn',len)
 
       </div>
 
-      <div className="flex justify-between  ">
+      <div className="md:flex justify-between hidden   ">
         {images.map((image, index) => (
             <button
             key={index}

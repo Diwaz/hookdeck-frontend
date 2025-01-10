@@ -10,7 +10,7 @@ function Hero() {
 
 <section className='  flex justify-center'>
 
-    <div className=' w-[60%] border-x-[1px] border-strip'>
+    <div className=' w-[100%] border-x-[1px] border-strip'>
         <div className='mt-28'><NewUpdate/></div>
         <div><HeroText/></div>
         <div className='mt-10'><ImageSlider/></div>
