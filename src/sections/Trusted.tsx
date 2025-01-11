@@ -16,8 +16,8 @@ function Trusted() {
             Trusted by great teams around the world
             </p>
             </div>
-            <div className='flex flex-col  bg-red-400 justify-center gap-5 xl:gap-20 '>
-                <div className=' flex flex-col h-20 justify-between items-center bg-slate-400'>
+            <div className='flex flex-col   justify-center gap-5 xl:gap-20 '>
+                <div className=' flex flex-col h-20 justify-between items-center '>
                     <div ><Logo1/></div>
                     <div><Logo5/></div>
                 </div>

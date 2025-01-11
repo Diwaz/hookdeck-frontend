@@ -60,7 +60,7 @@ const len = images.length -1
 export default function ComponentSlider() {
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = React.useState(true)
-console.log('kebnnnn',len)
+
   React.useEffect(() => {
     if (!isAutoPlaying) return
 
@@ -78,9 +78,9 @@ console.log('kebnnnn',len)
   }
 
   return (
-    <div className="border-[1px] p-2 rounded-[20px] h-full   ">
+    <div className="border-[1px] p-2 rounded-[20px] h-full    ">
 
-    <div className="relative w-[100%]  flex gap-2 flex-row-reverse  justify-between mx-auto ">
+    <div className="relative w-[100%]  xl:flex gap-2 xl:flex-row-reverse  justify-between mx-auto ">
       <div className=" w-full">
         <AnimatePresence mode="wait">
                     <motion.div
@@ -100,7 +100,7 @@ console.log('kebnnnn',len)
 
       </div>
 
-      <div className=" flex-col flex w-[30%]   ">
+      <div className=" flex-col flex xl:w-[30%] w-[100%]   ">
         {images.map((image, index) => (
             <button
             key={index}

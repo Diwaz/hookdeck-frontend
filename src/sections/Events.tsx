@@ -67,12 +67,12 @@ export default function StickySections() {
                 <section ref={processRef} className='relative gradLine'>
                         <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 
-                <div className='bg-red-300 '>
-                    <div className="title bg-slate-500 flex gap-3  items-center xl:w-[25%] mb-6 ">
+                <div className=' '>
+                    <div className="title  flex gap-3  items-center xl:w-[25%] mb-6 ">
                         {/* <div className=' ml-[-50px]'> <Process width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div> */}
                         <div className='font-bold text-xxxl'>Process</div>
                         </div>
-<div className='bg-green-400 xl:flex gap-1'>
+<div className=' xl:flex gap-1'>
 
                     <div className='flex  gap-1 justify-center w-[100%]   '> 
                         {/* <LGcard title={'Never miss an event.'} desp={'Reply on an event giveaway with unparalled uptime and ingestion spreads.'}/> */}
