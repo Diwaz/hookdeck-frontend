@@ -56,7 +56,7 @@ const images: Image[] = [
     label: "Message broker for serverles",
   },
 ]
-const len = images.length -1
+// const len = images.length -1
 export default function ComponentSlider() {
   const [currentIndex, setCurrentIndex] = React.useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = React.useState(true)
