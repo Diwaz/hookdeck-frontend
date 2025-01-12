@@ -7,7 +7,7 @@ import HamburgerMenu from '@/components/hamburgerMenu'
 function Header() {
   return (
     <header className=' flex justify-center border-b-[1px] sticky top-0 bg-background z-20 '>
-        <div className="mainContainer flex justify-between px-5 py-2 bg-blue text-black  items-center  w-[100%] xl:w-[60%]">
+        <div className="mainContainer flex justify-between px-5 py-2 bg-blue text-black  items-center  w-[100%] 2xl:w-[60%]">
             <div className='text-sm'>
                 <nav className='flex gap-6'>
                     <a href="http://" className='flex w-24 items-center font-bold '>
