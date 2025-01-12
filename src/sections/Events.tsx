@@ -48,7 +48,7 @@ export default function StickySections() {
         <div className=' flex justify-center h-full   font-lato'>
             <div className='w-[95%] xl:w-[60%]'>
                 <section ref={receiveRef} className='relative  gradLine' >
-                        <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                        <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 hidden xl:flex '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 {/* <div className='sticky bg-slate-400 top-4 z-30'>hello</div> */}
                 <div>
                     <div className="title flex  gap-3 items-center  mb-6   ">
@@ -65,7 +65,7 @@ export default function StickySections() {
                 </div>
                 </section>
                 <section ref={processRef} className='relative gradLine'>
-                        <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                        <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 hidden xl:flex '> <Receive width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 
                 <div className=' '>
                     <div className="title  flex gap-3  items-center xl:w-[25%] mb-6 ">
@@ -88,7 +88,7 @@ export default function StickySections() {
                 </section>
                         <section ref={transformRef} className='relative gradLine'>
 
-                <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 '> <Deliver width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
+                <div className=' -translate-x-16 translate-y-12 sticky top-20 z-10 hidden xl:flex '> <Deliver width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div>
                 <div className=''>
                     <div className="title flex gap-3 items-center w-[25%] mb-6">
                         {/* <div className=' ml-[-50px]'> <Deliver width={32} height={32} className='text-primary bg-lightbg w-10 h-10 p-1 rounded-lg border-lightstrip border-[0.5px] shadow-custshadow2'/></div> */}
