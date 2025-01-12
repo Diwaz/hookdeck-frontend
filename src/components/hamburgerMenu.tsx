@@ -9,7 +9,7 @@ const HamburgerMenu = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative  xl:hidden ">
       {/* Hamburger Button */}
       <input
         type="checkbox"
